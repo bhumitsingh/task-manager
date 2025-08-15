@@ -8,13 +8,17 @@ console.log('Starting React app...');
 const rootElement = document.getElementById('root');
 console.log('Root element:', rootElement);
 
-const root = ReactDOM.createRoot(rootElement);
-console.log('Root created successfully');
+if (rootElement) {
+  const root = ReactDOM.createRoot(rootElement);
+  console.log('Root created successfully');
 
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+  root.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
 
-console.log('App rendered');
+  console.log('App rendered');
+} else {
+  console.error('Root element not found');
+}

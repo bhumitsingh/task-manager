@@ -1,10 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import TaskManager from './components/TaskManager';
 import ProjectManager from './components/ProjectManager';
 import ErrorBoundary from './components/ErrorBoundary';
 
 const App = () => {
   const [activeView, setActiveView] = useState('tasks'); // 'tasks' or 'projects'
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    // This will only run on the client side
+    setIsClient(true);
+    console.log('App component mounted on client');
+  }, []);
+
+  if (!isClient) {
+    return (
+      <div className="min-h-screen bg-gray-100 py-8">
+        <div className="max-w-4xl mx-auto p-4">
+          <h1 className="text-3xl font-bold text-center">Loading...</h1>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <ErrorBoundary>
