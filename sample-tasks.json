@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Research target audience",
+    "description": "Conduct market research to identify our target audience demographics and preferences",
+    "priority": "medium",
+    "dueDate": "2023-06-15",
+    "assignee": "Marketing Team"
+  },
+  {
+    "title": "Create social media content",
+    "description": "Design and create engaging content for social media platforms",
+    "priority": "high",
+    "dueDate": "2023-06-20",
+    "assignee": "Content Creator"
+  },
+  {
+    "title": "Set up analytics tracking",
+    "description": "Implement analytics tools to track campaign performance",
+    "priority": "medium",
+    "dueDate": "2023-06-18",
+    "assignee": "Data Analyst"
+  }
+]

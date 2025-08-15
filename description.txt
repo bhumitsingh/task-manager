@@ -1,0 +1,21 @@
+The Collaborative Task Planner is a web-based application designed to streamline project management and team collaboration. This tool empowers users to organize their work into distinct projects and manage tasks efficiently. Its primary goal is to simplify the process of planning, assigning, and tracking tasks for a group of people, whether it's for a personal project or a professional team.
+
+Key Features
+Project Management: Create and organize tasks under separate projects, each with its own name and description. This feature allows you to keep different initiatives distinct and easy to manage.
+
+AI-Powered Task Generation: The application integrates a large language model to automatically generate detailed sub-tasks from a high-level prompt. For example, by simply typing "Plan a marketing campaign," the AI will create a list of actionable tasks with descriptions and suggested assignees.
+
+Task Import: You can import tasks from a pre-formatted JSON file. This feature is ideal for quickly populating a new project with existing task lists or using standardized templates.
+
+Automatic Task Distribution: To simplify workload management, you can select a group of tasks and a list of collaborators. The app will automatically distribute the tasks among the team members using a round-robin assignment method.
+
+Detailed Task View: Clicking on any task in the list opens a modal window that displays its detailed information, including the full description and assignee, allowing for a focused review without cluttering the main interface.
+
+Real-Time Collaboration: Built on a real-time database, all changes—from new tasks to status updates—are instantly synchronized across all users. This ensures that every team member is always working with the most current information.
+
+Technology Stack
+Frontend: The user interface is built with React, a popular JavaScript library for building single-page applications. This provides a dynamic and responsive user experience. The application uses Tailwind CSS for a modern, mobile-first design system.
+
+Backend: The application uses Firebase Firestore as its serverless, NoSQL database. This provides real-time data synchronization, making collaborative features seamless. It also handles user authentication via Firebase Authentication to ensure data security.
+
+AI Integration: The AI features are powered by the Gemini API using a structured JSON output format. This allows the application to receive a consistent, machine-readable list of tasks from the AI model.
