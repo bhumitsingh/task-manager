@@ -1,21 +1,94 @@
-The Collaborative Task Planner is a web-based application designed to streamline project management and team collaboration. This tool empowers users to organize their work into distinct projects and manage tasks efficiently. Its primary goal is to simplify the process of planning, assigning, and tracking tasks for a group of people, whether it's for a personal project or a professional team.
-
-Key Features
-Project Management: Create and organize tasks under separate projects, each with its own name and description. This feature allows you to keep different initiatives distinct and easy to manage.
-
-AI-Powered Task Generation: The application integrates a large language model to automatically generate detailed sub-tasks from a high-level prompt. For example, by simply typing "Plan a marketing campaign," the AI will create a list of actionable tasks with descriptions and suggested assignees.
-
-Task Import: You can import tasks from a pre-formatted JSON file. This feature is ideal for quickly populating a new project with existing task lists or using standardized templates.
-
-Automatic Task Distribution: To simplify workload management, you can select a group of tasks and a list of collaborators. The app will automatically distribute the tasks among the team members using a round-robin assignment method.
-
-Detailed Task View: Clicking on any task in the list opens a modal window that displays its detailed information, including the full description and assignee, allowing for a focused review without cluttering the main interface.
-
-Real-Time Collaboration: Built on a real-time database, all changes—from new tasks to status updates—are instantly synchronized across all users. This ensures that every team member is always working with the most current information.
-
-Technology Stack
-Frontend: The user interface is built with React, a popular JavaScript library for building single-page applications. This provides a dynamic and responsive user experience. The application uses Tailwind CSS for a modern, mobile-first design system.
-
-Backend: The application uses Firebase Firestore as its serverless, NoSQL database. This provides real-time data synchronization, making collaborative features seamless. It also handles user authentication via Firebase Authentication to ensure data security.
-
-AI Integration: The AI features are powered by the Gemini API using a structured JSON output format. This allows the application to receive a consistent, machine-readable list of tasks from the AI model.
+Failed to load resource: the server responded with a status of 400 ()Understand this error
+hook.js:608 [2025-08-15T10:27:17.119Z]  @firebase/firestore: Firestore (12.1.0): WebChannelConnection RPC 'Write' stream 0x7f832358 transport errored. Name: undefined Message: undefined
+overrideMethod @ hook.js:608Understand this warning
+firestore.googleapis.com/google.firestore.v1.Firestore/Write/channel?gsessionid=5mpdvSzdODlcRWNBi-nEHWcBnh5Ej-UXiRWFuQcT6cc&VER=8&database=projects%2Ftask-manager-1a872%2Fdatabases%2F(default)&RID=rpc&SID=EVuq0xSbFLqEFQPKdfhhCA&AID=0&CI=0&TYPE=xmlhttp&zx=41umepvfe42r&t=1:1  Failed to load resource: the server responded with a status of 400 ()Understand this error
+hook.js:608 [2025-08-15T10:27:17.208Z]  @firebase/firestore: Firestore (12.1.0): WebChannelConnection RPC 'Write' stream 0x7f832359 transport errored. Name: undefined Message: undefined
+overrideMethod @ hook.js:608Understand this warning
+firestore.googleapis.com/google.firestore.v1.Firestore/Write/channel?gsessionid=PTUYaF6cWooqbBTqBmcKGPBBndUjbLJXimQcV3gLQHs&VER=8&database=projects%2Ftask-manager-1a872%2Fdatabases%2F(default)&RID=rpc&SID=o9_yCMZ5J9M9fSlKilnd6A&AID=0&CI=0&TYPE=xmlhttp&zx=iad0z5nw0xra&t=1:1  Failed to load resource: the server responded with a status of 400 ()Understand this error
+hook.js:608 [2025-08-15T10:27:17.827Z]  @firebase/firestore: Firestore (12.1.0): WebChannelConnection RPC 'Write' stream 0x7f83235a transport errored. Name: undefined Message: undefined
+overrideMethod @ hook.js:608Understand this warning
+firestore.googleapis.com/google.firestore.v1.Firestore/Write/channel?gsessionid=uXmR1ndbTwdpfJpJbxrkv-3nQeEVEKsZtpUDyIOEARI&VER=8&database=projects%2Ftask-manager-1a872%2Fdatabases%2F(default)&RID=rpc&SID=bXrbCLQ8eUv69KGRJW5OkQ&AID=0&CI=0&TYPE=xmlhttp&zx=isv57716re7i&t=1:1  Failed to load resource: the server responded with a status of 400 ()Understand this error
+hook.js:608 [2025-08-15T10:27:19.062Z]  @firebase/firestore: Firestore (12.1.0): WebChannelConnection RPC 'Write' stream 0x7f83235b transport errored. Name: undefined Message: undefined
+overrideMethod @ hook.js:608Understand this warning
+firestore.googleapis.com/google.firestore.v1.Firestore/Write/channel?gsessionid=ueFOFpjQpKl8nFnlsM7ZkO8EWk0OTl1YtSY5_VKmaQo&VER=8&database=projects%2Ftask-manager-1a872%2Fdatabases%2F(default)&RID=rpc&SID=ocGwVATdniWQLrgWtIohzQ&AID=0&CI=0&TYPE=xmlhttp&zx=jxb1prck4pk3&t=1:1  Failed to load resource: the server responded with a status of 400 ()Understand this error
+hook.js:608 [2025-08-15T10:27:21.405Z]  @firebase/firestore: Firestore (12.1.0): WebChannelConnection RPC 'Write' stream 0x7f83235c transport errored. Name: undefined Message: undefined
+overrideMethod @ hook.js:608Understand this warning
+firestore.googleapis.com/google.firestore.v1.Firestore/Write/channel?gsessionid=PVbAOBKH2i-AkK3Me1vwIgk2KqjGm_r5aX42BRMent0&VER=8&database=projects%2Ftask-manager-1a872%2Fdatabases%2F(default)&RID=rpc&SID=5XfP_sul-36uwzy4DIufWw&AID=0&CI=0&TYPE=xmlhttp&zx=9ywc7ykq3u1a&t=1:1  Failed to load resource: the server responded with a status of 400 ()Understand this error
+hook.js:608 [2025-08-15T10:27:24.351Z]  @firebase/firestore: Firestore (12.1.0): WebChannelConnection RPC 'Write' stream 0x7f83235d transport errored. Name: undefined Message: undefined
+overrideMethod @ hook.js:608Understand this warning
+firestore.googleapis.com/google.firestore.v1.Firestore/Write/channel?gsessionid=px12V-G4acHV3LqhOhiL1HiXqjOSWpQ1hIzSUlkPU60&VER=8&database=projects%2Ftask-manager-1a872%2Fdatabases%2F(default)&RID=rpc&SID=osCBIwRX-aQNAnwIJlHOXQ&AID=0&CI=0&TYPE=xmlhttp&zx=c66hmgjsb9u9&t=1:1  Failed to load resource: the server responded with a status of 400 ()Understand this error
+hook.js:608 [2025-08-15T10:27:28.246Z]  @firebase/firestore: Firestore (12.1.0): WebChannelConnection RPC 'Write' stream 0x7f83235e transport errored. Name: undefined Message: undefined
+overrideMethod @ hook.js:608Understand this warning
+webchannel_blob_es2018.js:79  GET https://firestore.googleapis.com/google.firestore.v1.Firestore/Write/channel?gsessionid=7UIrYctRuCt4aHNqD_8aPvvjxiMsr7e0nDL8uMIr7N0&VER=8&database=projects%2Ftask-manager-1a872%2Fdatabases%2F(default)&RID=rpc&SID=64mVdt6AqljPzBr-049QUQ&AID=0&CI=0&TYPE=xmlhttp&zx=hmakj2xbcrsy&t=1 net::ERR_ABORTED 400 (Bad Request)
+h.send @ webchannel_blob_es2018.js:79
+h.ea @ webchannel_blob_es2018.js:87
+Jb @ webchannel_blob_es2018.js:57
+fd @ webchannel_blob_es2018.js:103
+h.Fa @ webchannel_blob_es2018.js:102
+Da @ webchannel_blob_es2018.js:41
+Promise.then
+x @ webchannel_blob_es2018.js:41
+ec @ webchannel_blob_es2018.js:101
+Rb @ webchannel_blob_es2018.js:66
+M.Y @ webchannel_blob_es2018.js:60
+M.ca @ webchannel_blob_es2018.js:57
+ab @ webchannel_blob_es2018.js:52
+F @ webchannel_blob_es2018.js:50
+Wc @ webchannel_blob_es2018.js:89
+h.bb @ webchannel_blob_es2018.js:88
+h.Ea @ webchannel_blob_es2018.js:88
+Lc @ webchannel_blob_es2018.js:84
+h.Pa @ webchannel_blob_es2018.js:82
+Promise.then
+Nc @ webchannel_blob_es2018.js:82
+h.Sa @ webchannel_blob_es2018.js:82
+Promise.then
+h.send @ webchannel_blob_es2018.js:79
+h.ea @ webchannel_blob_es2018.js:87
+Jb @ webchannel_blob_es2018.js:56
+Hb @ webchannel_blob_es2018.js:55
+h.Ga @ webchannel_blob_es2018.js:99
+Da @ webchannel_blob_es2018.js:41
+Promise.then
+x @ webchannel_blob_es2018.js:41
+fc @ webchannel_blob_es2018.js:97
+h.connect @ webchannel_blob_es2018.js:95
+Y.m @ webchannel_blob_es2018.js:109
+Yo @ index.esm.js:14626
+send @ index.esm.js:14480
+q_ @ index.esm.js:15004
+ra @ index.esm.js:15252
+__PRIVATE_onWriteStreamOpen @ index.esm.js:15724
+eval @ index.esm.js:15087
+eval @ index.esm.js:15114
+eval @ index.esm.js:19335
+eval @ index.esm.js:19368
+Promise.then
+cc @ index.esm.js:19368
+enqueue @ index.esm.js:19335
+enqueueAndForget @ index.esm.js:19313
+eval @ index.esm.js:15114
+eval @ index.esm.js:15086
+__ @ index.esm.js:14486
+eval @ index.esm.js:14694
+setTimeout
+T_ @ index.esm.js:14689
+j_ @ index.esm.js:15226
+G_ @ index.esm.js:15083
+eval @ index.esm.js:15073
+Promise.then
+auth @ index.esm.js:15064
+start @ index.esm.js:14969
+start @ index.esm.js:15220
+eval @ index.esm.js:15096
+eval @ index.esm.js:14866
+eval @ index.esm.js:15937
+eval @ index.esm.js:19335
+eval @ index.esm.js:19368
+Promise.then
+cc @ index.esm.js:19368
+enqueue @ index.esm.js:19335
+enqueueAndForget @ index.esm.js:19313
+handleDelayElapsed @ index.esm.js:15936
+eval @ index.esm.js:15918Understand this error
+hook.js:608 [2025-08-15T10:27:35.827Z]  @firebase/firestore: Firestore (12.1.0): WebChannelConnection RPC 'Write' stream 0x7f83235f transport errored. Name: undefined Message:
